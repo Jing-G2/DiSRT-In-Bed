@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DiSRT-In-Bed</title>
+
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="./static/css/academicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                <img
+                  src="images/icon.png"
+                  class="small-image"
+                  style="
+                    width: 45px;
+                    height: 45px;
+                    vertical-align: middle;
+                    margin-top: -8px;
+                    margin-right: 4px;
+                  "
+                />
+                <span style="color: rgb(7, 109, 140)">DiSRT</span
+                ><span style="color: rgb(41, 135, 154)">-</span
+                ><span style="color: rgb(98, 165, 180)">In</span
+                ><span style="color: rgb(98, 154, 180)">-</span
+                ><span style="color: rgb(98, 157, 180)">Bed</span>:
+                Diffusion-Based Sim-to-Real Transfer Framework for In-Bed Human
+                Mesh Recovery
+              </h1>
+              <h3 class="title is-4 conference-authors">
+                <!-- TODO Add Conference LINKS -->
+                <a target="_blank">CVPR 2025</a>
+              </h3>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a target="_blank"> Jing Gao</a>,
+                  <a target="_blank" href="https://zczcwh.github.io/"
+                    >Ce Zheng</a
+                  ><sup></sup>,
+                  <a target="_blank" herf="https://www.laszlojeni.com/"
+                    >Laszlo A. Jeni</a
+                  ><sup></sup>,
+                  <a target="_blank" href="https://zackory.com/"
+                    >Zackory Erickson</a
+                  ><sup></sup>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"
+                  ><sup></sup>Robostics Institute
+                  <br />
+                  <sup></sup>Carnegie Mellon University
+                </span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- TODO REPLACE ALL LINKS -->
+                  <span class="link-block">
+                    <a
+                      target="_blank"
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+
+                  <!-- TODO REPLACE ALL LINKS -->
+                  <span class="link-block">
+                    <a
+                      target="_blank"
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p style="font-size: 125%">
+                In-bed human mesh recovery can be crucial and enabling for
+                several healthcare applications, including sleep pattern
+                monitoring, rehabilitation support, and pressure ulcer
+                prevention. However, it is difficult to collect large real-world
+                visual datasets in this domain, in part due to privacy and
+                expense constraints, which in turn presents significant
+                challenges for training and deploying deep learning models.
+                Existing in-bed human mesh estimation methods often rely heavily
+                on real-world data, limiting their ability to generalize across
+                different in-bed scenarios, such as varying coverings and
+                environmental settings. To address this, we propose a
+                Sim-to-Real Transfer Framework for in-bed human mesh recovery
+                from overhead depth images, which leverages large-scale
+                synthetic data alongside limited or no real-world samples. We
+                introduce a diffusion model that bridges the gap between
+                synthetic data and real data to support generalization in
+                real-world in-bed pose and body inference scenarios. Extensive
+                experiments and ablation studies validate the effectiveness of
+                our framework, demonstrating significant improvements in
+                robustness and adaptability across diverse healthcare scenarios.
+                <br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">Sim-to-Real Transfer Framework</h2>
+            <div class="content has-text-justified">
+              <img
+                src="images/framework.png"
+                class="interpolation-image"
+                alt=""
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  max-width: 100%;
+                "
+              />
+              <p style="font-size: 125%">
+                Our proposed framework addresses the challenge of developing
+                reliable and generalizable in-bed human mesh recovery models in
+                scenarios with limited or no real-world data. By leveraging a
+                large volume of synthetic data generated through simulation,
+                combined with a small amount of real-world data, our framework
+                effectively reduces the reliance on costly and privacy-sensitive
+                real-world data collection. The framework comprises three
+                stages:
+              </p>
+              <ul style="font-size: 110%">
+                <li>
+                  <span style="color: rgb(0, 145, 255)"
+                    ><strong>Synthetic Data Generation:</strong></span
+                  >
+                  A large, diverse set of synthetic depth images is generated
+                  within a simulated environment.
+                </li>
+                <li>
+                  <span style="color: rgb(255, 208, 0)"
+                    ><strong>Training Stage:</strong></span
+                  >
+                  The diffusion model <i>D</i> conditions on the synthetic depth
+                  image <i>c<sub>syn</sub></i> to denoise SMPL parameters
+                  <i>x<sub>t</sub></i> in the reverse process, which begins at
+                  timestep <i>T</i> and progresses toward timestep 0, yielding
+                  the estimated human mesh <i>M<sub>syn</sub></i> .
+                </li>
+                <li>
+                  <span style="color: green"
+                    ><strong>Fine-Tuning Stage:</strong></span
+                  >
+                  The model conditions on real depth images
+                  <i>c<sub>real</sub></i> to estimate the human mesh
+                  <i>M<sub>real</sub></i> .
+                </li>
+              </ul>
+              <p style="font-size: 125%">
+                The symbol <i>g</i> in the diffusion model indicates the gender
+                flag associated with the input. The <i>Ref</i> in the figure
+                denotes the corresponding synthetic depth image during training
+                and the corresponding RGB image for visualization purposes only.
+              </p>
+
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="rows">
+          <div class="rows is-centered">
+            <div class="row is-full-width">
+              <h3
+                class="title is-4"
+                style="margin-left: 100pt; margin-bottom: 30pt"
+              >
+                <span class="dvima"> Model Architecture</span>
+              </h3>
+              <div class="columns has-text-justified">
+                <img
+                  src="images/architecture.png"
+                  class="interpolation-image"
+                  alt=""
+                  style="
+                    display: block;
+                    margin-left: 20pt;
+                    margin-right: auto;
+                    max-width: 50%;
+                  "
+                />
+
+                <span
+                  style="font-size: 120%; margin-left: 25pt; margin-right: auto"
+                >
+                  We introduce a network that takes noised SMPL parameter
+                  <i>x<sub>t</sub></i> , depth images <i>c</i>, and the timestep
+                  <i>t</i> as inputs and outputs the denoised SMPL parameters
+                  <i>z<sub>t</sub></i> .The reverse diffusion process leverages
+                  the depth feature latent to infer denoised SMPL parameters.
+                  The noisy SMPL parameters <i>x<sub>t</sub></i> are processed
+                  through an MLP encoder to obtain the SMPL parameter latent,
+                  and a uniform sampler generates the time embedding for the
+                  timestep <i>t</i>. These inputs—SMPL parameter latent, depth
+                  images, and time embedding—are then processed through residual
+                  and attention blocks.
+                </span>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="rows is-centered has-text-centered">
+          <div class="row">
+            <h2 class="title is-3">Experiments</h2>
+          </div>
+          <div
+            class="row is-centered has-text-justified"
+            style="margin-top: 30pt"
+          >
+            <h3 class="title is-4 is has-text-centered">
+              Comparison to Baseline
+            </h3>
+            <img
+              src="images/tables.png"
+              class="interpolation-image"
+              alt=""
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+              "
+            />
+            <!-- <p style="font-size: 125%"></p> -->
+          </div>
+          <div
+            class="row is-centered has-text-justified"
+            style="margin-top: 30pt"
+          >
+            <h3 class="title is-4 is has-text-centered">Ablation Study</h3>
+            <img
+              src="images/ablation1.png"
+              class="interpolation-image"
+              alt=""
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+              "
+            />
+            <img
+              src="images/ablation2.png"
+              class="interpolation-image"
+              alt=""
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+              "
+            />
+            <!-- <p style="font-size: 125%"></p> -->
+          </div>
+
+          <div
+            class="row is-centered has-text-justified"
+            style="margin-top: 30pt"
+          >
+            <h3 class="title is-4 is has-text-centered">Visualization</h3>
+            <h4 class="title is-5 is has-text-centered">Home Setting</h4>
+            <img
+              src="images/vis_home.png"
+              class="interpolation-image"
+              alt=""
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 90%;
+              "
+            />
+            <img
+              src="images/vis_home2.png"
+              class="interpolation-image"
+              alt=""
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 90%;
+              "
+            />
+            <!-- <p style="font-size: 125%"></p> -->
+            <h4
+              class="title is-5 is has-text-centered"
+              style="margin-top: 30pt"
+            >
+              Hospital Setting
+            </h4>
+            <img
+              src="images/vis_hospital.png"
+              class="interpolation-image"
+              alt=""
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 90%;
+              "
+            />
+            <!-- <p style="font-size: 125%"></p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-widescreen content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code><!-- TODO -->
+</code></pre>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                Website template borrowed from
+                <a href="https://emgbench.github.io/">EMGBench</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    timeoutIds = [];
+
+    function populateDemo(imgs, num) {
+      // Get the expanded image
+      var expandImg = document.getElementById("expandedImg-" + num);
+      // Get the image text
+      var imgText = document.getElementById("imgtext-" + num);
+      var answer = document.getElementById("answer-" + num);
+
+      // Use the same src in the expanded image as the image being clicked on from the grid
+      expandImg.src = imgs.src.replace(".png", ".mp4");
+      var video = document.getElementById("demo-video-" + num);
+      // or video = $('.video-selector')[0];
+      video.pause();
+      video.load();
+      video.play();
+      video.removeAttribute("controls");
+
+      console.log(expandImg.src);
+      // Use the value of the alt attribute of the clickable image as text inside the expanded image
+      var qa = imgs.alt.split("[sep]");
+      imgText.innerHTML = qa[0];
+      answer.innerHTML = "";
+
+      // Show the container element (hidden with CSS)
+      expandImg.parentElement.style.display = "block";
+      for (timeoutId of timeoutIds) {
+        clearTimeout(timeoutId);
+      }
+
+      // NOTE (wliang): Modified from original to read from file instead
+      fetch(qa[1])
+        .then((response) => response.text())
+        .then((contents) => {
+          // Call the processData function and pass the contents as an argument
+          typeWriter(contents, 0, qa[0], num, "imgtext-", "answer-");
+        })
+        .catch((error) => console.error("Error reading file:", error));
+    }
+
+    function typeWriter(txt, i, q, num, text1, text2) {
+      var imgText = document.getElementById(text1 + num);
+      var answer = document.getElementById(text2 + num);
+      if (imgText.innerHTML == q) {
+        for (let k = 0; k < 5; k++) {
+          if (i < txt.length) {
+            if (txt.charAt(i) == "\\") {
+              answer.innerHTML += "\n";
+              i += 1;
+            } else {
+              answer.innerHTML += txt.charAt(i);
+            }
+            i++;
+          }
+        }
+        hljs.highlightAll();
+        timeoutIds.push(
+          setTimeout(typeWriter, 1, txt, i, q, num, text1, text2)
+        );
+      }
+    }
+  </script>
+</html>
