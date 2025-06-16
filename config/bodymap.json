@@ -1,0 +1,26 @@
+{
+    "exp_type": "normal",
+    "exp_run": "full-train-test",
+    "name": "bodymap",
+    "modality": [
+        "depth"
+    ],
+    "epochs": 100,
+    "epochs_metric": 5,
+    "epochs_save": 5,
+    "main_model_fn": "PMM",
+    "lr": 1e-4,
+    "lr_policy": "none",
+    "weight_decay": 5e-4,
+    "batch_size": 32,
+    "microbatch": -1,
+    "use_smpl_loss": true,
+    "use_v2v_loss": true,
+    "lambda_smpl_loss": 1.0,
+    "lambda_v2v_loss": 0.25,
+    "is_affine": true,
+    "is_erase": true,
+    "depth_scaling": "bodymap",
+    "encoder_net": "",
+    "save_path": "../BodyMap_exps"
+}
